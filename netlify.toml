@@ -1,0 +1,8 @@
+[build]
+  publish = "."
+
+[[redirects]]
+  from    = "https://plasmapetey.com/*"
+  to      = "https://plazmapetey.com/:splat"
+  status  = 301
+  force   = true
