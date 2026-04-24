@@ -1355,3 +1355,45 @@ h3 { font-size: var(--text-xl); }
     scroll-behavior: auto;
   }
 }
+
+/* ============================================================
+   17. THANK-YOU PAGE
+   ============================================================ */
+.thank-you-section {
+  min-height: calc(100vh - var(--nav-height));
+  display: flex;
+  align-items: center;
+  background: var(--color-bg-alt);
+}
+
+.thank-you-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--space-6);
+  padding-block: var(--space-20);
+  max-width: 560px;
+  margin-inline: auto;
+}
+
+.thank-you-icon {
+  font-size: 4rem;
+  line-height: 1;
+}
+
+.thank-you-inner h1 {
+  font-size: var(--text-3xl);
+}
+
+@media (min-width: 640px) {
+  .thank-you-inner h1 {
+    font-size: var(--text-4xl);
+  }
+}
+
+.thank-you-inner p {
+  font-size: var(--text-lg);
+  color: var(--color-text-muted);
+  max-width: 420px;
+}
