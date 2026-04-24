@@ -94,12 +94,14 @@
 
     <!-- HERO -->
     <section id="hero" class="hero" aria-labelledby="hero-heading">
-      <div class="hero-content">
-        <p class="hero-eyebrow">Science Shows for Kids in the Bay Area</p>
-        <h1 id="hero-heading">Extraordinary Science Shows That Make Kids Go <em>Wow!</em></h1>
-        <p class="hero-subhead">Birthday parties &amp; school assemblies within 30 miles of Fremont, CA. Hands-on experiments, real reactions, and memories that last a lifetime.</p>
-        <a href="#contact" class="btn btn-primary btn-large">Book a Show</a>
-        <a href="#what-i-offer" class="btn btn-secondary btn-large">See What I Do</a>
+      <div class="container">
+        <div class="hero-content">
+          <p class="hero-eyebrow">Science Shows for Kids in the Bay Area</p>
+          <h1 id="hero-heading">Extraordinary Science Shows That Make Kids Go <em>Wow!</em></h1>
+          <p class="hero-subhead">Birthday parties &amp; school assemblies within 30 miles of Fremont, CA. Hands-on experiments, real reactions, and memories that last a lifetime.</p>
+          <a href="#contact" class="btn btn-primary btn-large">Book a Show</a>
+          <a href="#what-i-offer" class="btn btn-secondary btn-large">See What I Do</a>
+        </div>
       </div>
       <div class="hero-visual" aria-hidden="true">
         <div class="hero-badge">
@@ -415,7 +417,6 @@
           data-netlify="true"
           netlify-honeypot="bot-field"
           action="/thank-you"
-          novalidate
         >
           <!-- Honeypot field — hidden from real users, catches bots -->
           <p class="form-honeypot" aria-hidden="true">
@@ -436,8 +437,8 @@
 
           <div class="form-row">
             <div class="form-group">
-              <label for="phone">Phone Number</label>
-              <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="(510) 555-0100" />
+              <label for="phone">Phone Number <span aria-hidden="true">*</span></label>
+              <input type="tel" id="phone" name="phone" required autocomplete="tel" placeholder="(510) 555-0100" />
             </div>
             <div class="form-group">
               <label for="event-type">Type of Event <span aria-hidden="true">*</span></label>
